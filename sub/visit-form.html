@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엔로비 QR버전</title>
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <!-- Jquery 추가_21.07.27 -->
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/JavaScript" src="/js/script.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap" class="sub_wrap">
+      <header>
+        <div class="back_btn">
+          <a href="javascript:history.back();"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="company_name">
+          <h4>방문등록 확인</h4>
+        </div>
+        <div class="language">
+          <p class="en_btn lang_btn on"><a href="#">KO</a></p>
+          <p class="ko_btn lang_btn"><a href="#">EN</a></p>
+        </div>
+      </header>
+      <div id="form_content">
+        <div class="visit_check">
+          <h2 class="sub_title">방문등록 확인</h2>
+          <div class="visit_form">
+            <div class="left_form">
+              <div class="check_number">
+                <p>예약번호</p>
+                <input type="text" value="123456" disabled />
+              </div>
+              <div class="user_name">
+                <p>방문자</p>
+                <input type="text" value="123456" disabled />
+              </div>
+              <div class="user_car">
+                <p>차량번호</p>
+                <input type="text" value="123456" disabled />
+              </div>
+            </div>
+            <div class="right_form">
+              <div class="check_number">
+                <p>예약기간</p>
+                <input type="text" value="123456" disabled />
+              </div>
+              <div class="user_name">
+                <p>방문대상</p>
+                <input type="text" value="123456" disabled />
+              </div>
+              <div class="user_car">
+                <p>방문장소</p>
+                <input type="text" value="123456" disabled />
+              </div>
+            </div>
+          </div>
+          <div class="check_list">
+            <div class="carry_in">
+              <h4 class="list_title">반입할 물품을 선택하세요.</h4>
+              <div class="carry">
+                <p>
+                  <input type="checkbox" value="휴대전화" id="carry_phone" class="checkbox"/>
+                  <label for="carry_phone">휴대전화</label>
+                </p>
+                <p>
+                  <input type="checkbox" value="노트북" id="carry_note" class="checkbox"/>
+                  <label for="carry_note">노트북</label>
+                </p>
+                <p>
+                  <input type="checkbox" value="카메라" id="carry_camera" class="checkbox"/>
+                  <label for="carry_camera">카메라</label>
+                </p>
+                <p>
+                  <input type="checkbox" value="저장메체" id="carry_hdd" class="checkbox"/>
+                  <label for="carry_hdd">저장메체</label>
+                </p>
+              </div>
+            </div>
+            <div class="carry_out">
+              <h4 class="list_title">반출할 물품을 선택하세요.</h4>
+              <div class="carry">
+                <p>
+                  <input type="checkbox" value="휴대전화" id="carryout_phone" class="checkbox" />
+                  <label for="carryout_phone">휴대전화</label>
+                </p>
+                <p>
+                  <input type="checkbox" value="노트북" id="carryout_note" class="checkbox" />
+                  <label for="carryout_note">노트북</label>
+                </p>
+                <p>
+                  <input type="checkbox" value="카메라" id="carryout_camera" class="checkbox" />
+                  <label for="carryout_camera">카메라</label>
+                </p>
+                <p>
+                  <input type="checkbox" value="저장메체" id="carryout_hdd" class="checkbox" />
+                  <label for="carryout_hdd">저장메체</label>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="privacy">
+          <h2 class="sub_title">개인정보보호법 시행 안내</h2>
+          <p>0000년 00월 00일 시행된 개인정보보호법에 따라, 방문시 개인정보 수집 및 이용에 대한 동의와 보안 서약 동의를 받고 있습니다. 당사의 경우 전산 / 영상장비 / 저장매체의 반입이 금지되어 있으니 불편하시더라도 협조 부탁드립니다.</p>
+          <div class="privacy_security">
+            <div class="privacy_use">
+              <h4 class="privacy_title">개인정보 수집 및 이용</h4>
+              <div class="privacy_txt">
+                <p>○&nbsp;&nbsp;&nbsp;수집하는 개인정보의 항목 : 회사명, 이름, 휴대전화번호<br>
+                ○&nbsp;&nbsp;&nbsp;개인정보의 수집 및 이용 목적 : 출입보안 및 방문자 출입 절차 운영<br>
+                ○&nbsp;&nbsp;&nbsp;개인정보의 보유기간 : 1년<br>
+                ○&nbsp;&nbsp;&nbsp;방문출입증 사용 시 신분증 또는 면허증을 보관함<br>
+                ○&nbsp;&nbsp;&nbsp;개인정보 수집 및 이용 동의를 거부할 경우 출입이 제한 될 수 있습니다.</p>          
+              </div>
+              <div class="privacy_check">
+                <p class="privacy_txt">위의 내용을 이해하고 확인하였습니다.</p>
+                <div class="privacy_agree">
+                  <p>
+                    <!-- 레이블 클릭 시 input태그 체크 가능하게 변경_210727 -->
+                    <input type="checkbox" value="동의" id="agree1" class="checkbox" name="agree" onclick=""/>
+                    <label for="agree1">동의</label>
+                  </p>
+                  <p>
+                    <!-- 레이블 클릭 시 input태그 체크 가능하게 변경_210727 -->
+                    <input type="checkbox" value="미동의" id="unconsent1" class="checkbox" onclick=""/>
+                    <label for="unconsent1">미동의</label>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="security_use">
+              <h4 class="privacy_title">보안서약</h4>
+              <div class="security_txt">
+                <p>○&nbsp;&nbsp;&nbsp;방문출입증을 발급받은 경우 당일 반납 원칙에 동의함<br>
+                ○&nbsp;&nbsp;&nbsp;방문 중 취득한 정보에 대한 보안 유지에 동의함<br>
+                ○&nbsp;&nbsp;&nbsp;방문출입증 발급 방문자는 휴대폰 카메라에 보안 스티커를 부착하며, 반납 시까지 제거하지 않음<br>
+                ○&nbsp;&nbsp;&nbsp;방문출입증 반납시 휴대폰 카메라 봉인을 임의 제거하였을 경우 휴대폰(스마트기기)에 저장된 동영상 및 사진촬영 내역물을 확인하는 것에 동의함</p>
+              </div>
+              <div class="privacy_check">
+                <p class="privacy_txt">위의 내용을 이해하고 확인하였습니다.</p>
+                <div class="privacy_agree">
+                  <p>
+                    <!-- 레이블 클릭 시 input태그 체크 가능하게 변경_210727 -->
+                    <input type="checkbox" id="agree2" name="agree2" class="checkbox" onclick="" />
+                    <label for="agree2">동의</label>
+                  </p>
+                  <p>
+                    <!-- 레이블 클릭 시 input태그 체크 가능하게 변경_210727 -->
+                    <input type="checkbox" id="unconsent2" class="checkbox" name="agree2" onclick="" />
+                    <label for="unconsent2">미동의</label>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sign_form">
+            <div class="agree_data">
+              <h4><span class="year">0000년 <span class="mon">00</span>월 <span class="day">00</span>일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;성명 : <span class="agree_name">테스트</span></h4>
+            </div>
+            <div class="agree_sign">
+              <div class="sign_area">
+                <p>개인정보 수집 및 이용 / 보안 서약 동의 서명</p>
+                <h4>BOX 안에 서명 해주세요.</h4>
+              </div>
+            </div>
+          </div>
+          <p><a id="visit_add" class="visit_add btn" href="/sub/check-in.html"><i class="fa fa-check" aria-hidden="true"></i>방문등록</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
