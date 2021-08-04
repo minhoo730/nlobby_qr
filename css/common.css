@@ -9,7 +9,7 @@ button{cursor:pointer; outline:unset;}
 textarea{outline:unset; resize: none;}
 b{font-weight:600;}
 #wrap{width:100%; height:100%;overflow:hidden;}
-#wrap.sub_wrap{overflow:auto;}
+#wrap.sub_wrap{overflow-y:auto;}
 header{width:100%; height:50px; position:relative; border-bottom:1px solid #cccccc; background:#fff;}
 header .setup{position:absolute; left:20px; top:15px;}
 header .setup a{font-size:2.4rem; line-height:0; display:inline-block;}
@@ -52,7 +52,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:table;}
 /* 방문등록 확인 폼 */
 #form_content{max-width:1366px; margin:0 auto; width:100%;}
 .sub_wrap #form_content{margin:20px auto;}
-.visit_check{padding:0 20px;}
+.visit_check{margin:0 20px;}
 .sub_title{font-size:1.8rem; color:#333; margin-bottom:10px;}
 .visit_form{display:flex; align-items:center; width:100%;}
 .visit_form > div{display:flex; flex-wrap: wrap; flex-direction: row; width:100%;}
@@ -64,19 +64,19 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:table;}
 
 /* 반입 물품 선택 박스 */
 .check_list{display:flex; width:100%; padding-bottom:20px; border-bottom:1px solid #333;}
-.list_title{margin-top:20px; margin-bottom:10px; font-size:1.6rem;}
+.list_title{margin-top:20px; margin-bottom:10px; font-size:1.4rem;}
 .carry_in{width:100%;}
 .carry_out{width:100%;}
 .carry{display:flex; align-items: center; justify-content: space-between; width:100%;}
-.carry p{font-size:1.4rem; background:#f5f5f5; width:100%; margin-right:10px; padding:10px;}
+.carry p{font-size:1.2rem; background:#f5f5f5; width:100%; margin-right:10px; padding:10px;}
 .carry p:last-child{margin-right:0;}
-.carry p label{margin-left:5px; font-size:1.4rem;}
+.carry p label{margin-left:5px; font-size:1.2rem;}
 .carry_out{margin-left:10px;}
 
 .privacy{padding:0 20px; margin-top:20px;}
-.privacy .sign{font-size:1.4rem;}
-.privacy_txt p{font-size:1.4rem; line-height:24px;}
-.privacy_title{font-size:1.6rem; margin-bottom:10px;}
+.privacy .sign{font-size:1.2rem;}
+.privacy_txt p{font-size:1.2rem; line-height:22px;}
+.privacy_title{font-size:1.4rem; margin-bottom:10px;}
 .privacy .sub_title{padding-left:0; margin:0; margin-bottom:10px;}
 .privacy_security{display:flex; width:100%; align-items: flex-start; justify-self:center; margin-top:20px; position:relative;}
 .privacy_use{width:100%; margin-right:10px;}
@@ -86,13 +86,14 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:table;}
 .security_use ul li{font-size:1.4rem;}
 /* .privacy_check{position:absolute; bottom:0;} */
 .privacy_check{margin-top:20px;}
-.privacy_check > p{font-size:1.4rem; font-weight:500; color:#333; display:inline-block;}
-.privacy_check .privacy_agree{display:inline-block; margin-left:30px;}
-.privacy_agree .check{display:inline-block; background:#f5f5f5; padding:10px; margin-right:10px;}
-.privacy_agree input[type="text"]{width:100%; max-width:70%; padding:5px 0; display:inline-block; border:none; background:#f5f5f5; color:#98a4a5; font-size:1.4rem; font-weight:300; text-indent:10px;}
-.privacy_agree label{padding-right:10px; margin-left:5px; font-size:1.4rem; font-weight:400;}
-
+.privacy_check:after{display:block; content:''; clear:both;}
+.privacy_check > p{font-size:1.2rem; font-weight:500; color:#333; float:left; padding:10px 0;}
+.privacy_check .privacy_agree{float:right;}
+/* .privacy_agree input[type="text"]{width:100%; max-width:70%; padding:5px 0; display:inline-block; border:none; background:#f5f5f5; color:#98a4a5; font-size:1.4rem; font-weight:300; text-indent:10px;} */
+.privacy_agree label{padding:10px 0 10px 15px; margin-left:5px; font-size:1.2rem; font-weight:400;}
+.privacy_agree input[type="checkbox"]{position:absolute; top:12px;}
 .sign_form{display:flex; justify-content: center; align-items: center; margin:20px 0 0 0;}
+.privacy_agree .check{position:relative; display:inline-block; background:#f5f5f5; padding:10px; margin-right:2px;}
 .sign_form > div{width:100%;}
 .sign_form .agree_data{margin-right:10px;}
 .agree_data h4{font-size:2.0rem; text-align:center; font-weight:500;}
@@ -138,12 +139,12 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:table;}
   #content .main_button .icon_area{font-size:5rem;}
   #content .main_button .icon_area .arrow_left, #content .main_button .icon_area .arrow_right {font-size:3rem;}
   #content .main_button .check_point .icon_area i{font-size:10rem;}
-  .privacy_check{position:relative; margin-top:20px;}
+  .privacy_check{position:relative; margin-top:10px;}
   .agree_data{margin:30px 0;}
   /* .carry{flex-direction: column;} */
-  .carry p{margin:3px 5px; padding:0; position:relative;}
-  .carry p input[type="checkbox"]{position:absolute; left:15px; top:19px;}
-  .carry p label{width:100%; display:block; padding:15px 0 15px 30px;}
+  .carry p{margin: 3px 3px 3px 0;padding:0;position:relative;}
+  .carry p input[type="checkbox"]{position:absolute; left:15px; top:13px;}
+  .carry p label{display:block; padding:10px 0 10px 30px;}
 }
 
 @media screen and (max-width:768px){
