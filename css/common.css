@@ -68,9 +68,10 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:table;}
 .carry_in{width:100%;}
 .carry_out{width:100%;}
 .carry{display:flex; align-items: center; justify-content: space-between; width:100%;}
-.carry p{font-size:1.2rem; background:#f5f5f5; width:100%; margin-right:10px; padding:10px;}
+.carry p{font-size:1.2rem; background:#f5f5f5; width:100%; margin-right:10px; padding:10px; position:relative;}
+.carry input[type="checkbox"]{position:absolute; top:13px; left:15px; width:13px; height:13px;}
 .carry p:last-child{margin-right:0;}
-.carry p label{margin-left:5px; font-size:1.2rem;}
+.carry p label{margin-left:5px; font-size:1.2rem; padding-left:20px;}
 .carry_out{margin-left:10px;}
 
 .privacy{padding:0 20px; margin-top:20px;}
@@ -91,7 +92,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:table;}
 .privacy_check .privacy_agree{float:right;}
 /* .privacy_agree input[type="text"]{width:100%; max-width:70%; padding:5px 0; display:inline-block; border:none; background:#f5f5f5; color:#98a4a5; font-size:1.4rem; font-weight:300; text-indent:10px;} */
 .privacy_agree label{padding:5px 10px 5px 30px; margin-left:5px; font-size:1.2rem; font-weight:400; display:inline-block;}
-.privacy_agree input[type="checkbox"]{position:absolute; top:7px; left:15px;}
+.privacy_agree input[type="checkbox"]{position:absolute; top:7px; left:15px; width:13px; height:13px;}
 /* .sign_form{display:flex; justify-content: center; align-items: center; margin:30px 0 0 0;} */
 .privacy_agree .check{position:relative; display:inline-block; background:#f5f5f5; margin-right:2px;}
 .sign_form > div{width:100%;}
