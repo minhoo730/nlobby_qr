@@ -51,9 +51,9 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:table;}
 
 /* 방문등록 확인 폼 */
 #form_content{max-width:1366px; margin:0 auto; width:100%;}
-.sub_wrap #form_content{margin:30px auto;}
-.visit_check{padding:0 40px;}
-.sub_title{font-size:2.0rem; color:#333; margin-bottom:10px;}
+.sub_wrap #form_content{margin:20px auto;}
+.visit_check{padding:0 20px;}
+.sub_title{font-size:1.8rem; color:#333; margin-bottom:10px;}
 .visit_form{display:flex; align-items:center; width:100%;}
 .visit_form > div{display:flex; flex-wrap: wrap; flex-direction: row; width:100%;}
 .visit_form .left_form{padding-right:0;}
@@ -73,13 +73,13 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:table;}
 .carry p label{margin-left:5px; font-size:1.4rem;}
 .carry_out{margin-left:10px;}
 
-.privacy{padding:0 40px; margin-top:20px;}
+.privacy{padding:0 20px; margin-top:20px;}
 .privacy .sign{font-size:1.4rem;}
 .privacy_txt p{font-size:1.4rem; line-height:24px;}
 .privacy_title{font-size:1.6rem; margin-bottom:10px;}
 .privacy .sub_title{padding-left:0; margin:0; margin-bottom:10px;}
 .privacy_security{display:flex; width:100%; align-items: flex-start; justify-self:center; margin-top:20px; position:relative;}
-.privacy_use{width:100%;}
+.privacy_use{width:100%; margin-right:10px;}
 .privacy_txt{width:100%; height:120px; overflow-y:scroll;display:inline-block;}
 .privacy_use ul li{font-size:1.4rem;}
 .security_use{width:100%;}
@@ -92,8 +92,9 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:table;}
 .privacy_agree input[type="text"]{width:100%; max-width:70%; padding:5px 0; display:inline-block; border:none; background:#f5f5f5; color:#98a4a5; font-size:1.6rem; font-weight:300; text-indent:10px;}
 .privacy_agree label{padding-right:10px; margin-left:5px; font-size:1.6rem; font-weight:400;}
 
-.sign_form{display:flex; justify-content: center; align-items: center; margin:30px 0 0 0;}
+.sign_form{display:flex; justify-content: center; align-items: center; margin:20px 0 0 0;}
 .sign_form > div{width:100%;}
+.sign_form .agree_data{margin-right:10px;}
 .agree_data h4{font-size:2.0rem; text-align:center; font-weight:500;}
 .agree_sign{width:100%; background:#fefee5; display:flex;  justify-content: center; align-items: center; text-align:center; height:180px;}
 .sign_area p{color:#cccccc; font-size:1.6rem; font-weight:400; margin-bottom:10px;}
@@ -137,13 +138,11 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:table;}
   #content .main_button .icon_area{font-size:5rem;}
   #content .main_button .icon_area .arrow_left, #content .main_button .icon_area .arrow_right {font-size:3rem;}
   #content .main_button .check_point .icon_area i{font-size:10rem;}
-  .privacy_security{flex-direction: column; height:auto;}
-  .privacy_check{position:relative; margin-top:30px;}
-  .sign_form{flex-direction: column; height:auto; margin:0;}
+  .privacy_check{position:relative; margin-top:20px;}
   .agree_data{margin:30px 0;}
-  .carry{flex-direction: column;}
-  .carry p{margin:3px 0; padding:0; position:relative;}
-  .carry p input[type="checkbox"]{position:absolute; left:15px; top:22px;}
+  /* .carry{flex-direction: column;} */
+  .carry p{margin:3px 5px; padding:0; position:relative;}
+  .carry p input[type="checkbox"]{position:absolute; left:15px; top:19px;}
   .carry p label{width:100%; display:block; padding:15px 0 15px 30px;}
 }
 
@@ -152,7 +151,10 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:table;}
   #content .main_button p i.build_common{font-size:7rem;}
   #content .main_button .check_point .icon_area i{font-size:7rem;}
   #content .main_button p a{font-size:1.6rem;}
-
+  .carry{display:block;}
+  .carry p{margin:3px; display:inline-block; width:49%;}
+  .carry p:nth-child(2n){margin-right:0; margin-left:0;}
+  .carry p:nth-child(2n-1){margin-left:0;}
 }
 @media screen and (max-width:600px){
   #wrap{overflow:auto;}
@@ -160,6 +162,9 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:table;}
   #content .main_button{flex-direction: column; padding:0; width:100%; height:auto; top:0px;}
   .visit_form{flex-direction: column}
   .visit_form .right_form{margin-left:0;}
+  .privacy_security{flex-direction: column; height:auto;}
+  .sign_form{flex-direction: column; height:auto; margin:0;}
+
   .carry_out{margin-left:0;}
   .check_list{flex-direction: column;}
   .privacy_check .privacy_agree{margin-left:0; margin:20px 0;}
