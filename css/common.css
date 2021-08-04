@@ -92,10 +92,10 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:table;}
 /* .privacy_agree input[type="text"]{width:100%; max-width:70%; padding:5px 0; display:inline-block; border:none; background:#f5f5f5; color:#98a4a5; font-size:1.4rem; font-weight:300; text-indent:10px;} */
 .privacy_agree label{padding:5px 10px 5px 30px; margin-left:5px; font-size:1.2rem; font-weight:400; display:inline-block;}
 .privacy_agree input[type="checkbox"]{position:absolute; top:7px; left:15px;}
-.sign_form{/* display:flex; justify-content: center; align-items: center; */margin:30px 0 0 0;}
+/* .sign_form{display:flex; justify-content: center; align-items: center; margin:30px 0 0 0;} */
 .privacy_agree .check{position:relative; display:inline-block; background:#f5f5f5; margin-right:2px;}
 .sign_form > div{width:100%;}
-.sign_form .agree_data{margin-right:10px;}
+.sign_form .agree_data{margin-right:10px; margin:20px 0;}
 .agree_data h4{font-size:2.0rem; text-align:center; font-weight:500;}
 .agree_sign{width:100%; background:#fefee5; display:flex;  justify-content: center; align-items: center; text-align:center; height:180px;}
 .sign_area p{color:#cccccc; font-size:1.6rem; font-weight:400; margin-bottom:10px;}
