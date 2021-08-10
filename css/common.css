@@ -99,12 +99,13 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 /* 방문등록 확인 폼 */
 #form_content{margin:0 auto; width:100%; padding-top:60px;}
 /* .sub_wrap #form_content{margin:0px auto;} */
-.visit_check{margin:20px; border-bottom:1px solid #333; padding-bottom:20px;}
+.visit_check{margin:20px;}
 .sub_title{font-size:2.4rem; color:#333; margin-bottom:20px;}
-.visit_form{display:flex; align-items:center; width:100%;}
+/* .visit_form{display:flex; align-items:center; width:100%;} */
+.visit_form{padding-bottom:20px;}
 .visit_form > div{display:flex; flex-wrap: wrap; flex-direction: row; width:100%;}
 .visit_form .left_form{padding-right:0;}
-.visit_form .right_form{padding-left:0; margin-left:20px;}
+/* .visit_form .right_form{padding-left:0; margin-left:20px;} */
 .visit_form > div > div{display:flex; width:100%; margin:0 0 10px 0; align-items: center; justify-content: flex-start;}
 .visit_form > div > div:last-child{margin-bottom:0;}
 .visit_form > div > div .user_title{width:100%; max-width:25%; font-size:1.6rem; font-weight:600; padding: 0; color:#333; margin-right:5px; display:inline-block; text-align:left; }
@@ -160,12 +161,12 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .sign_area p{color:#cccccc; font-size:1.6rem; font-weight:400; margin-bottom:10px;}
 .sign_area h4{color:#999999; font-size:2.0rem; font-weight:500;}
 .visit_btn{position:relative; width:100%; margin:50px 0 0 0; text-align:center; display:flex; align-items: center; justify-content: center;}
-.visit_cancel{width:45%; background:#e9e9e9; padding:20px 0; font-size:2.0rem;}
-.visit_add{width:55%; background:var(--common-color); color:#fff; border:none; padding:20px 0; font-size:2.0rem; text-align:center;}
+.visit_cancel{width:45%; background:#f1f1f1; padding:20px 0; font-size:2.4rem;}
+.visit_add{width:55%; background:var(--common-color); color:#fff; border:none; padding:20px 0; font-size:2.4rem; text-align:center;}
 .visit_add i{font-size:2.2rem; margin-right:10px;}
 
 /* 철거GP 방문정보 */
-.gp_visit{margin:20px;}
+.gp_visit{border-top:1px solid #333; padding-top:20px;}
 
 
 /* 환경설정 */

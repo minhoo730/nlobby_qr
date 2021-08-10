@@ -52,7 +52,7 @@
               </div>
               <div class="user_day">
                 <p class="user_title">방문기간</p>
-                <p class="day_data data">2021. 07. 27</p>
+                <p class="day_data data">2021. 07. 27. 13:00 ~ 2021. 07. 27. 16:00</p>
               </div>
               <div class="user_birthday">
                 <p class="user_title">생년월일</p>
@@ -63,11 +63,36 @@
                 <p class="vaccine_data data">아스트라 제네카</p>
               </div>
               <div class="user_zone">
-                <p class="user_title">방문지역</p>
+                <p class="user_title">방문장소</p>
                 <p class="zone_data data">경의선 출입사무소</p>
               </div>
             </div>
           </div>
+
+          <div class="gp_visit">
+            <h2 class="sub_title">철거GP 방문정보</h2>
+            <div class="visit_form">
+              <div class="left_form">
+                <div class="gp_place">
+                  <p class="user_title">GP 방문장소</p>
+                  <p class="place_data data">경의선 GP</p>
+                </div>
+                <div class="user_gp">
+                  <p class="user_title">GP 방문여부</p>
+                  <p class="gp_data data">방문</p>
+                </div>
+                <div class="user_gp">
+                  <p class="user_title">GP 방문시간</p>
+                  <p class="gp_data data">2021. 07. 27. 13:00 ~ 2021. 07. 27. 16:00</p>
+                </div>
+                <div class="user_gp">
+                  <p class="user_title">GP 방문인원</p>
+                  <p class="gp_data data">20명</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <div class="check_list option_off">
             <div class="carry_in">
               <h4 class="list_title">반입할 물품을 선택하세요.</h4>
@@ -167,9 +192,6 @@
             </div>
           </div>
         </div>
-        <div class="gp_visit">
-          <h2 class="sub_title">철거GP 방문정보</h2>
-        </div>
         <div class="privacy option_off">
           <h2 class="sub_title">개인정보보호법 시행 안내</h2>
           <p class="sign">0000년 00월 00일 시행된 개인정보보호법에 따라, 방문시 개인정보 수집 및 이용에 대한 동의와 보안 서약 동의를 받고 있습니다. 당사의 경우 전산 / 영상장비 / 저장매체의 반입이 금지되어 있으니 불편하시더라도 협조 부탁드립니다.</p>
@@ -238,7 +260,7 @@
         </div>
       </div>
       <div class="visit_btn">
-        <a id="visit_cancel" class="visit_cancel btn" href="../sub/check-in.html">취소</a>
+        <a id="visit_cancel" class="visit_cancel btn" href="javascript:history.back();">취소</a>
         <a id="visit_add" class="visit_add btn" href="../sub/check-in.html">
           <i class="fa fa-check" aria-hidden="true"></i>
           방문등록
