@@ -247,13 +247,13 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
   #content .slogun p{font-size:3.0rem;}
   #content .slogun img{width:100%; max-width:280px;}
   #content .main_button{/* flex-direction: column; */padding:0; width:100%; height:auto; top:0px;}
-  .main_button p{width:110px; height:110px; /* margin-bottom:30px; margin-right:0; */ margin-right:20px;}
-  .main_button p a{padding:10px 0; font-size:1.4rem;}
+  .main_button p{width:100px; height:100px; /* margin-bottom:30px; margin-right:0; */ margin-right:10px;}
+  .main_button p a{/*padding:10px 0;*/ font-size:1.4rem;}
   .main_button p i.build_common{font-size:10rem;}
   .main_button p:last-child{margin-bottom:0; margin-right:0;}
-  .main_button p.main_btn img{max-width:60px;}
-  .main_button .check_point a img{max-width:38px;}
-  .main_button .main_btn a span.eng_title{font-size:1.6rem;}
+  .main_button p.main_btn img{max-width:40px; margin-bottom:5px;}
+  .main_button .check_point a img{max-width:30px;}
+  .main_button .main_btn a span.eng_title{font-size:1.4rem;}
   .visit_form{flex-direction: column}
   .visit_form .right_form{margin-left:0;}
   .carry_out{margin-left:0;}
