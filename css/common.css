@@ -14,12 +14,13 @@ textarea{outline:unset; resize: none;}
 b{font-weight:600;}
 #wrap{width:100%; height:100%;overflow:hidden;}
 #wrap.sub_wrap{overflow:auto;}
-
+a:focus{outline:none;}
+button:focus{outline:none;}
 
 header{width:100%; height:60px; position:fixed; background:var(--common-color); box-shadow:0px 0px 14px 0 rgb(0 0 0 / 15%); z-index:999;}
 header .setup{position:absolute;left:10px;top:5px;width:50px;height:50px;}
-header .setup a{font-size:3.0rem; line-height:0;display: flex;width:100%;height:100%;justify-content: center;align-items: center; border-radius:50px; color:#fff;}
-header .setup a:focus{color:#23425d; background:#fff;}
+header .setup a{font-size:3.0rem; line-height:0;display: flex;width:100%;height:100%;justify-content: center;align-items: center; border-radius:50px; color:#fff; transition:all 0.4s;}
+header .setup a:hover{color:#23425d; background:#fff;}
 header .company_name{width:100%; height:60px; display:table; text-align:center;}
 header .company_name h4{font-size:1.6rem; display:table-cell; vertical-align:middle;}
 header .company_name h4 img{width:230px; margin-top:3px;}
@@ -32,10 +33,10 @@ header .language .ko_btn{margin-right:0;}
 
 /* 서브페이지 뒤로가기 버튼 */
 header .back_btn{position:absolute; left:10px; top:6px; width:50px; height:50px;}
-header .back_btn a{font-size: 4.0rem; line-height: 0; display: flex; width: 100%; height: 100%; justify-content: center; align-items: center; border-radius: 50px;}
+header .back_btn a{font-size: 4.0rem; line-height: 0; display: flex; width: 100%; height: 100%; justify-content: center; align-items: center; border-radius: 50px; transition:all 0.4s;}
 header .back_btn a:hover{background:#fff;}
 header .back_btn a:hover i{color:var(--common-color);}
-header .back_btn a i{margin-right:7px; color:#fff;}
+header .back_btn a i{margin-right:7px; color:#fff;transition:all 0.4s;}
 
 
 #content{position:relative; height:calc(100% - 60px); display:flex; align-items: center; justify-content: center; padding-top:60px;flex-direction: column;}
@@ -47,8 +48,10 @@ header .back_btn a i{margin-right:7px; color:#fff;}
 #content .main_button{display:flex; text-align:center; align-items: stretch;position:relative; justify-content: center; width:100%; margin-top:50px;}
 .main_button p{width:100%; max-width:200px; height:200px; display: flex; transition:0.3s all;justify-content: center; align-items: center; border:none; border-radius:50%; overflow:hidden; margin:0 30px 0 0;}
 .main_button p:last-child{margin-right:0;}
-.main_button p a{background:var(--btn-color); display: flex; color:#fff; width: 100%; height: 100%; font-size:2.0rem; font-weight:400; flex-direction: column;justify-content: center; align-items: center;}
-#wrap .main_button p a:hover{background:var(--common-color)}
+.main_button p a{background:var(--btn-color); display: flex; color:#fff; width: 100%; height: 100%; font-size:2.0rem; font-weight:400; flex-direction: column;justify-content: center; align-items: center; transition:all 0.4s;}
+
+
+#wrap .main_button p a:hover{background:var(--common-color);}
 /* #content .main_button .check_in a{background:url('../img/check_in_ico.svg')no-repeat;} */
 /* .main_button .check_in{border-right:1px solid #e9e9e9;} */
 .main_button p.main_btn img{display:block; margin-bottom:10px; width:100%; max-width:70px;}
@@ -161,8 +164,10 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .sign_area p{color:#cccccc; font-size:1.6rem; font-weight:400; margin-bottom:10px;}
 .sign_area h4{color:#999999; font-size:2.0rem; font-weight:500;}
 .visit_btn{position:relative; width:100%; margin:50px 0 0 0; text-align:center; display:flex; align-items: center; justify-content: center;}
-.visit_cancel{width:45%; background:#f1f1f1; padding:20px 0; font-size:2.0rem;}
-.visit_add{width:55%; background:var(--common-color); color:#fff; border:none; padding:20px 0; font-size:2.0rem; text-align:center;}
+.visit_cancel{width:40%; background:#f1f1f1; padding:20px 0; font-size:2.0rem; transition: all 0.4s;}
+.visit_cancel:hover{background:#e3e3e3; }
+.visit_add{width:60%; background:#5daef5; color:#fff; border:none; padding:20px 0; font-size:2.0rem; text-align:center; transition: all 0.4s;}
+.visit_add:hover{background:var(--common-color);}
 .visit_add i{font-size:2.0rem; margin-right:10px;}
 
 /* 철거GP 방문정보 */
