@@ -161,9 +161,9 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .sign_area p{color:#cccccc; font-size:1.6rem; font-weight:400; margin-bottom:10px;}
 .sign_area h4{color:#999999; font-size:2.0rem; font-weight:500;}
 .visit_btn{position:relative; width:100%; margin:50px 0 0 0; text-align:center; display:flex; align-items: center; justify-content: center;}
-.visit_cancel{width:45%; background:#f1f1f1; padding:20px 0; font-size:2.4rem;}
-.visit_add{width:55%; background:var(--common-color); color:#fff; border:none; padding:20px 0; font-size:2.4rem; text-align:center;}
-.visit_add i{font-size:2.2rem; margin-right:10px;}
+.visit_cancel{width:45%; background:#f1f1f1; padding:20px 0; font-size:2.0rem;}
+.visit_add{width:55%; background:var(--common-color); color:#fff; border:none; padding:20px 0; font-size:2.0rem; text-align:center;}
+.visit_add i{font-size:2.0rem; margin-right:10px;}
 
 /* 철거GP 방문정보 */
 .gp_visit{border-top:1px solid #333; padding:20px 0 70px 0;}
