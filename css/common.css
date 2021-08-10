@@ -16,7 +16,7 @@ b{font-weight:600;}
 #wrap.sub_wrap{overflow:auto;}
 a:focus{outline:none;}
 button:focus{outline:none;}
-select{-webkit-appearance: none; -moz-appearance: none; appearance: none;}
+select{font-size:1.6rem; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 select::-ms-expand {display: none;}
 
 
@@ -210,7 +210,7 @@ footer{position:absolute; bottom:0; width:100%; height:100px; display:none;}
 .select_input select{width:100%; background:url('../img/arrow_ico.svg') 97% 50% no-repeat; border:none; border-bottom:1px solid #e9e9e9; padding:10px 0; text-indent:10px; outline:none; transition:all 0.4s;}
 .select_input select:focus{outline:none; border-bottom:1px solid var(--btn-color);}
 .select_input select:hover{border-bottom:1px solid var(--common-color);}
-.select_input select option{outline:none; border:1px solid #849c23;}
+.select_input select option{outline:none; border:1px solid #849c23; font-size:1.6rem;}
 
 /* Rounded sliders */
 .toggle-button.round {border-radius: 34px;}
