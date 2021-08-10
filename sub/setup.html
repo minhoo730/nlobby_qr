@@ -20,13 +20,6 @@
       <div class="company_name">
         <h4><img src="../img/logo.svg"></h4>
       </div>
-      <div class="language">
-        <!--
-          <p class="lang_ico"><i class="fa fa-language" aria-hidden="true"></i></p>
-        -->
-        <p class="en_btn lang_btn on"><a href="#">KO</a></p>
-        <p class="ko_btn lang_btn"><a href="#">EN</a></p>
-      </div>
     </header>
     <div id="content">
       <div class="con_area">
@@ -43,17 +36,17 @@
               <label for="location_p">Location (위치)</label>
               <input class="text input" type="text" id="location_p" name="location_p" placeholder="본사" />
             </div>
-            <div class="event_gate">
-              <!-- PUSH 알림 버튼 일부분 소스 변경 -->
-							<label class="push_alarm" for="push_box">PUSH 알림</label>
-              <label class="switch">
-                <input type="checkbox" id="push_box"checked>
-                <div class="toggle-button round"></div>
-              </label>
-            </div>
             <div class="check_in_view">
               <label for="chk_in">Check-in 화면 유지시간 (sec)</label>
               <input class="text input" id="chk_in" type="text" placeholder="5" />
+            </div>
+            <div class="event_gate">
+              <!-- ON / OFF 버튼 일부분 소스 변경 -->
+              <label class="push_alarm" for="push_box">반입/보관물품 사용</label>
+              <label class="switch">
+                <input type="checkbox" id="push_box" checked>
+                <div class="toggle-button round"></div>
+              </label>
             </div>
           </div>
           <div class="setup_right">
@@ -61,10 +54,12 @@
               <label for="gate_form">Gate (출입문)</label>
               <input class="text input" id="gate_form" type="text" placeholder="1F" />
             </div>
+            <!--
             <div class="event_name">
               <label for="eve_name">행사명</label>
               <input class="text input" id="eve_name" type="text" placeholder="예) 2017 Festive Week" />
             </div>
+            -->
             <div class="check_out_view">
               <label for="chk_out">Check-out 화면 유지시간 (sec)</label>
               <input class="text input" id="chk_out" type="text" placeholder="5" />
