@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>nlobby QRcode</title>
+  <title>남북출입사무소 QR</title>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/common.css">
   <!-- Jquery 추가_21.07.27 -->
@@ -18,7 +18,7 @@
         <a href="sub/setup.html"><i class="fa fa-cog" aria-hidden="true"></i></a>
       </div>
       <div class="company_name">
-        <h4>엔로비 QR버전 공통</h4>
+        <h4><img src="img/logo.svg"></h4>
       </div>
       <div class="language">
         <!--
@@ -28,43 +28,35 @@
         <p class="ko_btn lang_btn"><a href="#">EN</a></p>
       </div>
     </header>
-    <div id="content">
+    <div id="content" class="main_content">
+      <div class="slogun">
+        <img src="../img/slogun_img.svg"/>
+        <p>QR버전 방문관리 시스템</p>
+      </div>
       <div class="main_button">
         <p class="check_in main_btn">
           <a href="sub/visit-form.html">
-            <span class="icon_area">
-              <!-- 입/출문 아이콘 추가_21.07.27 -->
-              <i class="arrow_left fa fa-arrow-left" aria-hidden="true"></i>
-              <i class="fa fa-building-o build_common" aria-hidden="true"></i>
-            </span>
-            입문
+            <img src="../img/check_in_ico.svg"/>
+            <span class="eng_title">Check In</span>
+            입문하기
           </a>
         </p>
         <p class="check_out main_btn">
-          <a href="sub/check-out.html">
-            <span class="icon_area">
-              <!-- 입/출문 아이콘 추가_21.07.27 -->
-              <i class="fa fa-building-o build_common" aria-hidden="true"></i>
-              <i class="fa arrow_right fa-arrow-right" aria-hidden="true"></i>
-            </span>
-              출문
+          <a href="sub/visit-form.html">
+            <img src="../img/check_out_ico.svg" />
+            <span class="eng_title">Check Out</span>
+            출문하기
           </a>
         </p>
         <p class="check_point main_btn">
-          <a href="sub/check-point.html">
-            <span class="icon_area">
-              <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-            </span>
+          <a href="sub/visit-form.html">
+            <img src="../img/check_point_ico.svg" />
+            <span class="eng_title">Check Point</span>
             체크포인트
           </a>
         </p>
       </div>
     </div>
-    <footer>
-      <div class="logo_area">
-        <img src="img/nlobby_logo.png"/>
-      </div>
-    </footer>
   </div>
 </body>
 </html>
