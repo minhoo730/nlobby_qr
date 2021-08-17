@@ -31,17 +31,25 @@
     <div id="content">
       <div class="con_area">
         <div class="print_ip">
-          <p>
+          <!-- <p>
             <label for="point_ip">프린터 IP</label>
             <input class="text input" type="text" id="point_ip" name="point_ip" placeholder="123.123.123.123" />
           </p>
-          <button class="btn">샘플 출력</button>
+          <button class="btn">샘플 출력</button> -->
         </div>
         <div class="setup_list">
           <div class="setup_left">
-            <div class="location_point">
-              <label for="location_p">Location (위치)</label>
-              <input class="text input" type="text" id="location_p" name="location_p" placeholder="본사" />
+            <div class="select_input">
+              <label for="chk_select">Location (집결장소)</label>
+              <select id="chk_select">
+                <option value="">---- 장소선택 ----</option>
+                <option value="리스트1">경의선</option>
+                <option value="리스트2">동해선</option>
+              </select>
+            </div>
+            <div class="check_in_view">
+              <label for="chk_in">설치위치</label>
+              <input class="text input" id="chk_in" type="text" placeholder="5" />
             </div>
             <div class="check_in_view">
               <label for="chk_in">Check-in 화면 유지시간 (sec)</label>
@@ -55,7 +63,7 @@
                 <div class="toggle-button round"></div>
               </label>
             </div>
-            <div class="select_input">
+            <!-- <div class="select_input">
               <label for="chk_select">선택폼</label>
               <select id="chk_select">
                 <option value="">---- 선택 ----</option>
@@ -63,9 +71,9 @@
                 <option value="리스트2">리스트2</option>
                 <option value="리스트3">리스트3</option>
               </select>
-            </div>
+            </div> -->
           </div>
-          <div class="setup_right">
+          <!-- <div class="setup_right">
             <div class="gate">
               <label for="gate_form">Gate (출입문)</label>
               <input class="text input" id="gate_form" type="text" placeholder="1F" />
@@ -78,7 +86,7 @@
               <label for="chk_out">Check-out 화면 유지시간 (sec)</label>
               <input class="text input" id="chk_out" type="text" placeholder="5" />
             </div>
-          </div>
+          </div> -->
         </div>
         <p class="bot_btn"><button class="complete_btn">저장</button></p>
       </div>
